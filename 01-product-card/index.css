@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background-color: #F6F6F6;
+}
+
+.title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 36px;
+
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1180px;
+    max-height: 482px;
+    margin: 0 auto;
+    background: #FFFFFF;
+
+}
+
+.product_card {
+    height: 481.72px;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+
+}
+
+.product_card:not(:last-child) {
+    margin-right: 20px;
+}
+
+.product_img {
+    background-image: url('./Image.jpg');
+    max-width: 380px;
+    height: 213px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.product_tags {
+    display: flex;
+}
+
+.tag_new {
+    margin-top: 16px;
+    margin-left: 17px;
+    width: 110px;
+    height: 24px;
+    background-color: #FDCFF3;
+    border-radius: 8px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+.tag_last {
+    margin-left: 17px;
+    margin-top: 16px;
+    width: 134px;
+    height: 24px;
+    background-color: #FFCF56;
+    border-radius: 8px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.descr_title {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    margin-left: 24px;
+}
+
+
+.descr_text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 24px;
+    max-width: 332px;
+    height: 96px;
+    margin-bottom: 24.25px;
+}
+
+.produsct_btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    width: 332px;
+    height: 48px;
+    border: 2px solid #42940F;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #42940F;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #42940F;
+    cursor: pointer;
+}
+
+.btn:active {
+    color: #ffffff;
+    background-color: #1F5200;
+    cursor: pointer;
+}
+
+.btn_disabled {
+    display: block;
+    margin: 0 auto;
+    width: 332px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #4E4E4E;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .product_card:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .product_card:last-child {
+        margin-right: 0px;
+    }
+
+    .product_card {
+        margin: 0 auto;
+        width: 300px;
+
+    }
+
+    .product_card:not(:first-child) {
+
+        margin-top: 20px;
+    }
+
+    .product {
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .btn {
+        width: 250px;
+    }
+
+    .btn_disabled {
+        width: 250px;
+    }
+
+
+
+}
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .descr_title {
+        font-size: 20px;
+    }
+
+    .descr_text {
+        font-size: 15px;
+    }
+
+    .product_card:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .product_card:last-child {
+        margin-right: 0px;
+    }
+
+    .product_card {
+        margin: 0 auto;
+        width: 280px;
+
+    }
+
+    .product_card:not(:first-child) {
+
+        margin-top: 20px;
+    }
+
+    .product {
+        margin: 0 auto;
+        width: 280px;
+    }
+
+    .btn {
+        width: 230px;
+    }
+
+    .btn_disabled {
+        width: 230px;
+    }
+
+    .tag_new {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 80px;
+        height: 24px;
+        font-size: 10px;
+    }
+
+    .tag_last {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 80px;
+        height: 24px;
+        font-size: 10px;
+    }
+
+
+}
